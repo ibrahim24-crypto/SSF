@@ -9,8 +9,8 @@ class CreatePostScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final TextEditingController _titleController = TextEditingController();
-    final TextEditingController _contentController = TextEditingController();
+    final TextEditingController titleController = TextEditingController();
+    final TextEditingController contentController = TextEditingController();
     final authService = ref.watch(authServiceProvider);
     final firestoreService = ref.watch(firestoreServiceProvider);
 
@@ -23,14 +23,14 @@ class CreatePostScreen extends ConsumerWidget {
         child: Column(
           children: [
             TextField(
-              controller: _titleController,
+              controller: titleController,
               decoration: const InputDecoration(
                 labelText: 'Title',
               ),
             ),
             const SizedBox(height: 20),
             TextField(
-              controller: _contentController,
+              controller: contentController,
               decoration: const InputDecoration(
                 labelText: 'Content',
               ),
@@ -42,8 +42,8 @@ class CreatePostScreen extends ConsumerWidget {
                 final user = authService.currentUser;
                 if (user != null) {
                   firestoreService.addPost(
-                    _titleController.text,
-                    _contentController.text,
+                    titleController.text,
+                    contentController.text,
                     user.uid,
                   );
                   Navigator.pop(context);

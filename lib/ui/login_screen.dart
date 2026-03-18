@@ -9,7 +9,7 @@ class LoginScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final authService = ref.watch(authServiceProvider);
-    final TextEditingController _displayNameController = TextEditingController();
+    final TextEditingController displayNameController = TextEditingController();
 
     return Scaffold(
       appBar: AppBar(
@@ -25,15 +25,15 @@ class LoginScreen extends ConsumerWidget {
             ),
             const SizedBox(height: 20),
             TextField(
-              controller: _displayNameController,
+              controller: displayNameController,
               decoration: const InputDecoration(
                 labelText: 'Enter a display name',
               ),
             ),
             ElevatedButton(
               onPressed: () {
-                if (_displayNameController.text.isNotEmpty) {
-                  authService.signInAnonymously(_displayNameController.text);
+                if (displayNameController.text.isNotEmpty) {
+                  authService.signInAnonymously(displayNameController.text);
                 }
               },
               child: const Text('Sign in Anonymously'),

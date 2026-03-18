@@ -1,3 +1,4 @@
+
 name: myapp
 description: "A new Flutter project."
 publish_to: 'none'
@@ -32,14 +33,9 @@ dependencies:
   cupertino_icons: ^1.0.8
   
   # Internationalization
-  intl: ^0.19.0
-  
-  # Image & Cloudinary
-  image_picker: ^1.1.2
-  cloudinary_public: ^0.24.0
+  intl: ^0.20.2
   
   # Utilities
-  fast_levenshtein: ^3.0.0
   flutter_hooks: ^0.20.5
 
   # Code Generation

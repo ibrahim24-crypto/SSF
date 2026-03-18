@@ -54,8 +54,8 @@ class HomeScreen extends ConsumerWidget {
             MaterialPageRoute(builder: (context) => const CreatePostScreen()),
           );
         },
-        child: const Icon(Icons.add),
         tooltip: 'Create Post',
+        child: const Icon(Icons.add),
       ),
     );
   }
