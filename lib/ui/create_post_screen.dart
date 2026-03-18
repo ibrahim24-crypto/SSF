@@ -5,7 +5,7 @@ import 'package:myapp/core/auth_provider.dart';
 import 'package:myapp/core/firestore_provider.dart';
 
 class CreatePostScreen extends ConsumerWidget {
-  const CreatePostScreen({Key? key}) : super(key: key);
+  const CreatePostScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

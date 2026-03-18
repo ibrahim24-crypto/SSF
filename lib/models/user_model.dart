@@ -23,13 +23,13 @@ abstract class UserModel with _$UserModel {
 @freezed
 abstract class Permissions with _$Permissions {
   const factory Permissions({
-    @Default(false) bool approve_pictures,
-    @Default(false) bool delete_posts,
-    @Default(false) bool delete_comments,
-    @Default(false) bool manage_admins,
-    @Default(false) bool delete_users,
-    @Default(false) bool manage_forbidden_words,
-    @Default(false) bool manage_protected_names,
+    @Default(false) bool approvePictures,
+    @Default(false) bool deletePosts,
+    @Default(false) bool deleteComments,
+    @Default(false) bool manageAdmins,
+    @Default(false) bool deleteUsers,
+    @Default(false) bool manageForbiddenWords,
+    @Default(false) bool manageProtectedNames,
   }) = _Permissions;
 
   factory Permissions.fromJson(Map<String, dynamic> json) => _$PermissionsFromJson(json);

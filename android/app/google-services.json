@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "745753571996",
+    "project_id": "studio-5067807929-254e6",
+    "storage_bucket": "studio-5067807929-254e6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745753571996:android:a726aa4f50a77e77a33359",
+        "android_client_info": {
+          "package_name": "com.example.myapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "745753571996-g21akgv804avk6rv6njbrbgk83n9504q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnW-JfXaa5QHrmeCiDFxGKVPJnYIuyvOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "745753571996-g21akgv804avk6rv6njbrbgk83n9504q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745753571996:android:a42e10e2244d992ba33359",
+        "android_client_info": {
+          "package_name": "com.himo.secretscroll"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "745753571996-g21akgv804avk6rv6njbrbgk83n9504q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnW-JfXaa5QHrmeCiDFxGKVPJnYIuyvOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "745753571996-g21akgv804avk6rv6njbrbgk83n9504q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

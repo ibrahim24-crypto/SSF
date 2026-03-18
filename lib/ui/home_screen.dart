@@ -4,20 +4,27 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:myapp/core/auth_provider.dart';
 import 'package:myapp/core/firestore_provider.dart';
+import 'package:myapp/core/theme_provider.dart';
 import 'package:myapp/ui/create_post_screen.dart';
 
 class HomeScreen extends ConsumerWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final authService = ref.watch(authServiceProvider);
     final postsStream = ref.watch(postsStreamProvider);
+    final themeMode = ref.watch(themeProvider);
 
     return Scaffold(
       appBar: AppBar(
         title: const Text('SecretScroll'),
         actions: [
+          IconButton(
+            icon: Icon(themeMode == ThemeMode.dark ? Icons.light_mode : Icons.dark_mode),
+            onPressed: () => ref.read(themeProvider.notifier).toggleTheme(),
+            tooltip: 'Toggle Theme',
+          ),
           IconButton(
             icon: const Icon(Icons.logout),
             onPressed: () => authService.signOut(),
