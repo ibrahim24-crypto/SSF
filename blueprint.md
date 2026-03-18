@@ -1,29 +1,21 @@
-# Project Blueprint
+# Project Overview
 
-## Overview
+This project is a Flutter application that allows users to share secrets anonymously. Users can sign in with their Google account or anonymously with a display name. Once logged in, they can create, read, and interact with posts.
 
-This document outlines the features, design, and architecture of the SecretScroll Flutter application.
+# Implemented Features
 
-## Current Features
+*   **Authentication:**
+    *   Google Sign-In
+    *   Anonymous Sign-In
+*   **Firestore:**
+    *   Secure data storage for users, posts, and other app data.
+*   **UI:**
+    *   Modern, visually appealing login screen.
+    *   Gradient background.
+    *   Custom logo and typography.
 
-*   **Project Name:** SecretScroll
-*   **Firebase Integration:** Core Firebase services are integrated (Authentication, Firestore).
-*   **Authentication:** Supports anonymous and Google Sign-In.
-*   **Firestore Database:** Stores user-created posts.
-*   **Post Creation:** Users can create posts with a title and content.
-*   **Home Screen Feed:** Displays a list of all created posts.
-*   **State Management:** Using Riverpod for state management.
-*   **Routing:** Basic navigation implemented.
-*   **Material Design 3 Theme:**
-    *   Light and dark themes using `ColorScheme.fromSeed`.
-    *   Custom typography with `google_fonts`.
-    *   Theme toggle for switching between light and dark modes.
-*   **Clean Codebase:** Refactored to address all lint warnings.
+# Current Plan
 
-## Future Enhancements
-
-*   **User Profiles:** Display user information and posts.
-*   **Post Deletion:** Allow users to delete their own posts.
-*   **Admin Panel:** Create a separate UI for admin users to manage the app.
-*   **Image Support:** Allow users to attach images to their posts.
-*   **Comments:** Enable users to comment on posts.
+*   **Fix Google Sign-In Error:** Add the necessary web client ID to the `web/index.html` file to resolve the "ClientID not set" error.
+*   **Improve Login Page Style:** Redesign the login screen to be more modern and visually appealing.
+*   **Update Firestore Security Rules:** Implement new security rules to enhance data protection.
